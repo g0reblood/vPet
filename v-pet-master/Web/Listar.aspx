@@ -35,8 +35,7 @@
         </tr>
              <tr>
             <td class="auto-style1">
-                <asp:Button ID="btnCrear" runat="server" OnClick="btnCrear_Click" Text="crear pet" />
-                 </td>
+                &nbsp;</td>
             <td class="auto-style1">
                 &nbsp;</td>
             <td class="auto-style1">

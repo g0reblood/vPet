@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class ColeccionPet:List <VPet>
+    public class ColeccionPet:List <Pet>
     {
         public ColeccionPet()
         {

@@ -26,7 +26,7 @@ public partial class _Default : System.Web.UI.Page
         else
         {
            
-            btnCrear.Visible = true;
+          
             gdvPet.DataSource = colex;
             gdvPet.DataBind();
         }
@@ -36,7 +36,7 @@ public partial class _Default : System.Web.UI.Page
     protected void gdvPet_SelectedIndexChanged(object sender, EventArgs e)
     {
 
-        btnCrear.Visible = true;
+    
         Session["Nombre"] = gdvPet.SelectedRow.Cells[1].Text;
     }
 

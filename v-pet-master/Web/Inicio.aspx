@@ -1,72 +1,72 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Inicio.aspx.cs" Inherits="inicio" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Inicio.aspx.cs" Inherits="Inicio" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
-        .auto-style1 {
-            width: 452px;
+        .auto-style2 {
+            height: 23px;
+            width: 151px;
         }
         .auto-style3 {
-            height: 547px;
+            width: 151px;
         }
         .auto-style4 {
-            width: 39%;
-            height: 404px;
+            height: 23px;
+            width: 598px;
+        }
+        .auto-style5 {
+            width: 598px;
         }
         .auto-style6 {
-            width: 67px;
-            margin-left: 308px;
-            margin-top: 0px;
-            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .auto-style7 {
+            margin-left: 63px;
+        }
+        .auto-style8 {
+            width: 100%;
+            margin-left: 230px;
+        }
+        .auto-style10 {
+            width: 835px;
+            height: 104px;
+            margin-left: 1px;
+            margin-top: 66px;
+        }
+        .auto-style11 {
+            height: 23px;
+            width: 79px;
+        }
+        .auto-style12 {
+            width: 79px;
         }
     </style>
-</head>
-<body style="height: 565px; background-image: url('imagenes/fondo1.jpg'); background-repeat: no-repeat; background-attachment: fixed; margin-bottom: 2px;" >
-    <form id="form1" runat="server">
-    <div align="center" class="auto-style3">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <table style="margin-left: 145px; font-size: 26px; margin-right: 0px; margin-top: 0px; margin-bottom: 0px;" class="auto-style4">
-            <tr>
-                <td class="auto-style1"><img src="imagenes/logo.png" style="margin-left: 0px"/></td>
-            </tr>
-            <tr>
-                <td style="font-family: 'eight-Bit Madness'; font-size: 26px; color: #FFFFFF;" class="auto-style1">
-                    <br />
-                    Usuario:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="txtUsuario" runat="server" Width="245px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td style="font-family: 'eight-Bit Madness'; color: #FFFFFF;" class="auto-style1">
-                    <br />
-                    Password:&nbsp;&nbsp;
-                    <asp:TextBox ID="txtPass" runat="server" Width="243px" TextMode="Password"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td style="font-family: 'eight-Bit Madness'; color: #FFFFFF;" class="auto-style1">
-                    <br />
-                    <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" style="background-image:url(imagenes/botonIngresar.png); background-repeat:no-repeat" BorderColor="#3333FF" BorderStyle="Outset" Font-Bold="False" Font-Names="Eight-Bit Madness" Font-Size="Large" Height="42px" Width="78px" />
-                </td>
-            </tr>
-            <tr>
-                <td align="left" style="font-family: 'eight-Bit Madness'; color: #FFFFFF;" class="auto-style1">
-                    
-                    <a href="Registro.aspx" style="color:yellow" align="right"><h5 class="auto-style6">Registrate</h5></a>
-                </td>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div  align="center" class="auto-style10">
+    <table class="auto-style8">
+        <tr>
+            <td class="auto-style2"></td>
+            <td class="auto-style4"style="font-family: 'Eight-Bit Madness'; font-size: 50px; color: #FFFFFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenido a V-Pet</td>
+            <td class="auto-style11"></td>
+        </tr>
+        <tr>
+            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style5">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="btnLogin" runat="server" Font-Names="Eight-Bit Madness" Font-Size="X-Large" Text="Iniciar Sesion" style="background-image:url(imagenes/botonIngresar.png)" BorderColor="#3333FF" BorderStyle="Outset" OnClick="btnLogin_Click" CssClass="auto-style7"/>
+                &nbsp;<asp:Button ID="btnReg" runat="server" Font-Names="Eight-Bit Madness" Font-Size="X-Large" Text="Registrarse" style="background-image:url(imagenes/botonIngresar.png)" BorderColor="#3333FF" BorderStyle="Outset" OnClick="btnReg_Click" CssClass="auto-style6"/>
+            </td>
+            <td class="auto-style12">
                 
-            </tr>
-        </table>
-        
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style5">&nbsp;</td>
+            <td class="auto-style12">&nbsp;</td>
+        </tr>
+    </table>
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+

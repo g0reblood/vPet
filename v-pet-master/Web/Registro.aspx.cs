@@ -41,12 +41,7 @@ public partial class Registro : System.Web.UI.Page
 
                 colex.Add(play);
                 lblMsg.Text = "Se ha registrado Exitosamente!!";
-
-                txtNombreUser.Text = "";
-                txtUserid.Text = "";
-                txtCorreo.Text = "";
-                txtPass.Text = "";
-                chkSi.Checked = false;
+                Response.AddHeader("Refresh", "2,URL=Login.aspx");
             }
             catch (Exception ex)
             {
